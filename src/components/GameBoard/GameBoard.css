@@ -65,6 +65,16 @@
     font-weight: bold;
 }
 
+.light-icon{
+    color: #000;
+    font-size: 25px;
+}
+
+.dark-icon{
+    color: #fff;
+    font-size: 25px;
+}
+
 .grid {
     display: flex;
     flex-direction: column;
