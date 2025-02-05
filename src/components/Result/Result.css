@@ -1,0 +1,99 @@
+.result-container {
+  text-align: center;
+  padding: 20px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.dark-mode .result-container {
+  background-color: #121212;
+  color: white;
+}
+
+.win-message {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4caf50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.lose-message {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f44336;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.restart-button {
+  padding: 12px 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #2196f3;
+  color: white;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.restart-button:hover {
+  background-color: #1976d2;
+  transform: scale(1.05);
+}
+
+/* Dark Mode */
+.dark-mode .restart-button {
+  background-color: #ff9800;
+}
+
+.dark-mode .restart-button:hover {
+  background-color: #e68a00;
+}
+
+/* Small Screens */
+@media (max-width: 600px) {
+  .win-message,
+  .lose-message {
+      font-size: 18px;
+      gap: 5px;
+  }
+
+  .restart-button {
+      font-size: 16px;
+      padding: 10px 16px;
+  }
+}
+
+/* Medium Screens */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .win-message,
+  .lose-message {
+      font-size: 22px;
+      gap: 8px;
+  }
+
+  .restart-button {
+      font-size: 17px;
+      padding: 11px 18px;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1025px) {
+  .win-message,
+  .lose-message {
+      font-size: 24px;
+      gap: 10px;
+  }
+
+  .restart-button {
+      font-size: 18px;
+      padding: 12px 20px;
+  }
+}
